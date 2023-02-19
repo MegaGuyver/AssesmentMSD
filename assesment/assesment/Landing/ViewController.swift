@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     
     @IBAction func buttonBezier(_ sender: Any) {
         print("buttonBezier")
+        
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = BezierViewController()
+        self.navigationController?.pushViewController(nextViewController, animated: false)
+        
     }
     
     override func viewDidLoad() {
